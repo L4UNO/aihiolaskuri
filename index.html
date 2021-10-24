@@ -24,6 +24,7 @@
         <label>Materiaali</label>
         <br>
         <select id="material-selection" required>
+            <option value="" disabled selected>Valitse materiaali...</option>
             <option value="steel">Teräs/RST/HST</option>
             <option value="alu">Alumiini</option>
         </select>
@@ -33,6 +34,7 @@
         <label>Muoto</label>
         <br>
         <select id="material-form" required>
+            <option value="" disabled selected>Valitse muoto...</option>
             <option value="ptanko">Pyörötanko</option>
             <option value="ntanko">Neliö- tai lattatanko</option>
             <option value="putki">Ainesputki</option>
@@ -42,7 +44,7 @@
 
         <label>Kappaleen pituus (mm)</label>
         <br>
-        <input type="number" id="len" required></input>
+        <input type="number" id="len" required>
         <br>
 
         <label>1. sivu <strong>tai</strong> ulkohalkaisija (mm)</label>
@@ -52,12 +54,12 @@
 
         <label>2. sivu <strong>tai</strong> sisähalkaisija (mm)</label>
         <br>
-        <input type="number" id="w2" required></input>
+        <input type="number" id="w2" required>
         <br>
 
         <label>Määrä</label>
         <br>
-        <input type="number" id="qty" required></input>
+        <input type="number" id="qty" required>
         <br>
         
             <div class="napit">
