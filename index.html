@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aihiolaskuri</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="code.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="main-container">
+    <div class="header"></div>
+        <h1>
+            Painolaskuri
+        </h1>
+    </div>
+    
+    <div class="content">
+        <label>Materiaali</label>
+        <br>
+        <select id="material-selection" required>
+            <option value="steel">Teräs/RST/HST</option>
+            <option value="alu">Alumiini</option>
+        </select>
+
+        <br>
+
+        <label>Muoto</label>
+        <br>
+        <select id="material-form" required>
+            <option value="ptanko">Pyörötanko</option>
+            <option value="ntanko">Neliö- tai lattatanko</option>
+            <option value="putki">Ainesputki</option>
+        </select>
+
+        <br>
+
+        <label>Kappaleen pituus (mm)</label>
+        <br>
+        <input type="number" id="len" required></input>
+        <br>
+
+        <label>1. sivu <strong>tai</strong> ulkohalkaisija (mm)</label>
+        <br>
+        <input type="number" id="w1" required>
+        <br>
+
+        <label>2. sivu <strong>tai</strong> sisähalkaisija (mm)</label>
+        <br>
+        <input type="number" id="w2" required></input>
+        <br>
+
+        <label>Määrä</label>
+        <br>
+        <input type="number" id="qty" required></input>
+        <br>
+        
+            <div class="napit">
+            <button onclick="tulosta()">Laske</button><button onclick="tyhjenna()">Tyhjennä</button>
+            </div>
+
+        <span id="tulos"></span>
+        <br>
+        <span id="batch"></span>
+    </div>
+</div>
+    
+</body>
+</html>

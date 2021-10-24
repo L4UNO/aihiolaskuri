@@ -1,0 +1,72 @@
+body {
+    background-color: rgb(24, 24, 24);
+    color:rgb(224, 224, 224);
+}
+
+.main-container, .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Londrina Solid', cursive;
+    letter-spacing: 0.5em;
+    font-size: 3em;
+}
+
+label {
+    font-size: 1.5em;
+    font-family: 'Dosis', sans-serif;
+}
+
+
+select, input, button {
+    background-color: rgb(24, 24, 24);
+    color: rgb(224, 224, 224);
+    padding: 5px;
+    margin-bottom: 0.8em;
+    font-size: 1.6em;
+    margin-right: 0.5em;
+    width: 20%;
+    font-family: 'Dosis', sans-serif;
+}
+
+button {
+    width: 50%;
+}
+
+#tulos, #batch {
+    font-size: 1.8em;
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 0.1em;
+}
+
+.napit {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+@media screen and (max-width: 1000px) {
+    h1 {
+        font-size: 1.4em;
+    }
+
+    select, input, button {
+        padding: 10px;
+        margin-bottom: 0.8em;
+        font-size: 1.4em;
+        width: 60%;
+        font-family: 'Dosis', sans-serif;
+    }
+    
+    button {
+        margin-top: 1em;
+        padding: 1em;
+        min-width: 30vw;
+    }
+}
